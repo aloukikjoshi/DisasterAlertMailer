@@ -1,6 +1,5 @@
 .env
-token.json
-client_secret_46470661752-vj894bsko0sqav3jf89gun0fv4sjmqhk.apps.googleusercontent.com.json
+client_secret.json
 __pycache__/
 *.pyc
 *.pyo
