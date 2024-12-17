@@ -1,12 +1,12 @@
 # 🌪️ DisasterAlertMailer 📧
 
-DisasterAlertMailer is a Python-based application that tracks weather alerts and sends emergency notifications via email. It uses the WeatherAPI to fetch weather alerts and the Gmail API to send emails. The device's location is determined using the `ipinfo.io` service.
+DisasterAlertMailer is a Python-based application that tracks weather alerts and sends emergency notifications via email. It uses the [WeatherAPI](https://www.weatherapi.com/) to fetch weather alerts and the [Gmail API](https://console.cloud.google.com/apis/library/gmail.googleapis.com) to send emails. The device's location is determined using the `ipinfo.io` service.
 
 ## 📋 Table of Contents
 
 - [Features](#features)
 - [Installation](#installation)
-- [Configuration](#configuration)
+- [Configuration](https://github.com/aloukikjoshi/DisasterAlertMailer/edit/main/README.md#%EF%B8%8F-configuration)
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
@@ -14,7 +14,7 @@ DisasterAlertMailer is a Python-based application that tracks weather alerts and
 ## ✨ Features
 
 - 🌍 **Location Tracking**: Automatically tracks the device's location using `ipinfo.io`.
-- 🌦️ **Disaster Alerts**: Fetches alerts from WeatherAPI.
+- 🌦️ **Disaster Alerts**: Fetches alerts from [WeatherAPI](https://www.weatherapi.com/).
 - 📧 **Email Notifications**: Sends emergency alerts via Gmail.
 - ⏰ **Scheduler**: Checks for disasters every 15 minutes (adjustable).
 
@@ -82,4 +82,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-Made with ❤️ by [Your Name](https://github.com/yourusername)
+Made with ❤️ by [Aloukik Joshi](https://github.com/aloukikjoshi)
