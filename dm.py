@@ -36,7 +36,7 @@ def send_email(to_email, subject, body):
             flow = InstalledAppFlow.from_client_secrets_file(
                 os.getenv("CLIENT_SECRET_FILE"), SCOPES
             )
-            creds = flow.run_local_server(port=8888)  # Explicitly set redirect_uri port
+            creds = flow.run_local_server(port=51225)
 
         # Save the credentials for the next time
         with open('token.json', 'w') as token:
