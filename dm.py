@@ -79,13 +79,29 @@ def get_weather_alerts(api_key, location):
         return []
 
 
+# Function to get the device's location using ipinfo.io
+def get_device_location():
+    print("get_device_location function called")
+    response = requests.get("https://ipinfo.io")
+    if response.status_code != 200:
+        print(f"Error fetching device location: {response.status_code}")
+        return None
+
+    data = response.json()
+    return data.get("loc")
+
+
 # Function to check for disasters and send alerts
 def check_for_disasters():
     print("check_for_disasters function called")
-    location = os.getenv("LOCATION")
     api_key = os.getenv("WEATHERAPI_KEY")
-    if not location or not api_key:
-        print("Error: Missing LOCATION or WEATHERAPI_KEY in environment variables")
+    if not api_key:
+        print("Error: Missing WEATHERAPI_KEY in environment variables")
+        return
+
+    location = get_device_location()
+    if not location:
+        print("Error: Unable to determine device location")
         return
 
     print(f"Checking for disasters in {location}")
@@ -100,7 +116,7 @@ def check_for_disasters():
 
 
 # Schedule the task to run every 15 minutes (adjustable)
-schedule.every(1).minutes.do(check_for_disasters)
+schedule.every(15).minutes.do(check_for_disasters)
 print("Scheduler started")
 
 # Run the scheduler
