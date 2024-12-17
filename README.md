@@ -4,12 +4,12 @@ DisasterAlertMailer is a Python-based application that tracks weather alerts and
 
 ## 📋 Table of Contents
 
-- [Features](#features)
-- [Installation](#installation)
-- [Configuration](https://github.com/aloukikjoshi/DisasterAlertMailer/edit/main/README.md#%EF%B8%8F-configuration)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- Features
+- Installation
+- Configuration
+- Usage
+- Contributing
+- [License](LICENSE)
 
 ## ✨ Features
 
